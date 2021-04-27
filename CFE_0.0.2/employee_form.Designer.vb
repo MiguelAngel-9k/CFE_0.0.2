@@ -44,9 +44,28 @@ Partial Class employee_form
         Me.add_client_btn = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.delete_client_btn = New System.Windows.Forms.Button()
-        Me.nuevatarifa = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.personal_employee_info_panel = New System.Windows.Forms.Panel()
+        Me.canel_employee_info_btn = New System.Windows.Forms.Button()
+        Me.save_employee_btn = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.client_curp_txt = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.password_txt = New System.Windows.Forms.TextBox()
+        Me.last_name_txt = New System.Windows.Forms.TextBox()
+        Me.Flast_name_txt = New System.Windows.Forms.TextBox()
+        Me.username_txt = New System.Windows.Forms.TextBox()
+        Me.cliente_middle_name_txt = New System.Windows.Forms.TextBox()
+        Me.client_name_txt = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.add_employee_btn = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.personal_employee_info_panel.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'close_btn
@@ -305,12 +324,208 @@ Partial Class employee_form
         Me.nuevatarifa.Text = "Nueva tarifa"
         Me.nuevatarifa.UseVisualStyleBackColor = False
         '
+        'personal_employee_info_panel
+        '
+        Me.personal_employee_info_panel.Controls.Add(Me.canel_employee_info_btn)
+        Me.personal_employee_info_panel.Controls.Add(Me.save_employee_btn)
+        Me.personal_employee_info_panel.Controls.Add(Me.TextBox1)
+        Me.personal_employee_info_panel.Controls.Add(Me.client_curp_txt)
+        Me.personal_employee_info_panel.Controls.Add(Me.Label8)
+        Me.personal_employee_info_panel.Controls.Add(Me.Label3)
+        Me.personal_employee_info_panel.Controls.Add(Me.password_txt)
+        Me.personal_employee_info_panel.Controls.Add(Me.last_name_txt)
+        Me.personal_employee_info_panel.Controls.Add(Me.Flast_name_txt)
+        Me.personal_employee_info_panel.Controls.Add(Me.username_txt)
+        Me.personal_employee_info_panel.Controls.Add(Me.cliente_middle_name_txt)
+        Me.personal_employee_info_panel.Controls.Add(Me.client_name_txt)
+        Me.personal_employee_info_panel.Controls.Add(Me.Label5)
+        Me.personal_employee_info_panel.Enabled = False
+        Me.personal_employee_info_panel.Location = New System.Drawing.Point(505, 308)
+        Me.personal_employee_info_panel.Name = "personal_employee_info_panel"
+        Me.personal_employee_info_panel.Padding = New System.Windows.Forms.Padding(10)
+        Me.personal_employee_info_panel.Size = New System.Drawing.Size(635, 213)
+        Me.personal_employee_info_panel.TabIndex = 8
+        '
+        'canel_employee_info_btn
+        '
+        Me.canel_employee_info_btn.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.canel_employee_info_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace
+        Me.canel_employee_info_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Coral
+        Me.canel_employee_info_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.canel_employee_info_btn.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.canel_employee_info_btn.Location = New System.Drawing.Point(415, 169)
+        Me.canel_employee_info_btn.Name = "canel_employee_info_btn"
+        Me.canel_employee_info_btn.Size = New System.Drawing.Size(100, 29)
+        Me.canel_employee_info_btn.TabIndex = 3
+        Me.canel_employee_info_btn.Text = "Cancelar"
+        Me.canel_employee_info_btn.UseVisualStyleBackColor = False
+        '
+        'save_employee_btn
+        '
+        Me.save_employee_btn.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.save_employee_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace
+        Me.save_employee_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Khaki
+        Me.save_employee_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.save_employee_btn.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.save_employee_btn.Location = New System.Drawing.Point(521, 169)
+        Me.save_employee_btn.Name = "save_employee_btn"
+        Me.save_employee_btn.Size = New System.Drawing.Size(99, 29)
+        Me.save_employee_btn.TabIndex = 3
+        Me.save_employee_btn.Text = "Guardar"
+        Me.save_employee_btn.UseVisualStyleBackColor = False
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.TextBox1.Location = New System.Drawing.Point(216, 169)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.PlaceholderText = "RFC"
+        Me.TextBox1.Size = New System.Drawing.Size(181, 29)
+        Me.TextBox1.TabIndex = 6
+        '
+        'client_curp_txt
+        '
+        Me.client_curp_txt.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.client_curp_txt.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.client_curp_txt.Location = New System.Drawing.Point(25, 169)
+        Me.client_curp_txt.Name = "client_curp_txt"
+        Me.client_curp_txt.PlaceholderText = "CURP"
+        Me.client_curp_txt.Size = New System.Drawing.Size(183, 29)
+        Me.client_curp_txt.TabIndex = 6
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.Location = New System.Drawing.Point(415, 64)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(97, 32)
+        Me.Label8.TabIndex = 2
+        Me.Label8.Text = "Usuario"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Light", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Location = New System.Drawing.Point(25, 64)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(213, 32)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Nombre completo"
+        '
+        'password_txt
+        '
+        Me.password_txt.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.password_txt.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.password_txt.Location = New System.Drawing.Point(415, 134)
+        Me.password_txt.Name = "password_txt"
+        Me.password_txt.PlaceholderText = "Contraseña"
+        Me.password_txt.Size = New System.Drawing.Size(205, 29)
+        Me.password_txt.TabIndex = 1
+        '
+        'last_name_txt
+        '
+        Me.last_name_txt.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.last_name_txt.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.last_name_txt.Location = New System.Drawing.Point(214, 134)
+        Me.last_name_txt.Name = "last_name_txt"
+        Me.last_name_txt.PlaceholderText = "Apellido materno"
+        Me.last_name_txt.Size = New System.Drawing.Size(183, 29)
+        Me.last_name_txt.TabIndex = 1
+        '
+        'Flast_name_txt
+        '
+        Me.Flast_name_txt.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Flast_name_txt.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Flast_name_txt.Location = New System.Drawing.Point(25, 134)
+        Me.Flast_name_txt.Name = "Flast_name_txt"
+        Me.Flast_name_txt.PlaceholderText = "Apellido paterno"
+        Me.Flast_name_txt.Size = New System.Drawing.Size(183, 29)
+        Me.Flast_name_txt.TabIndex = 1
+        '
+        'username_txt
+        '
+        Me.username_txt.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.username_txt.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.username_txt.Location = New System.Drawing.Point(415, 99)
+        Me.username_txt.Name = "username_txt"
+        Me.username_txt.PlaceholderText = "Nombre de usuario"
+        Me.username_txt.Size = New System.Drawing.Size(205, 29)
+        Me.username_txt.TabIndex = 1
+        '
+        'cliente_middle_name_txt
+        '
+        Me.cliente_middle_name_txt.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.cliente_middle_name_txt.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cliente_middle_name_txt.Location = New System.Drawing.Point(214, 99)
+        Me.cliente_middle_name_txt.Name = "cliente_middle_name_txt"
+        Me.cliente_middle_name_txt.PlaceholderText = "Segundo nombre"
+        Me.cliente_middle_name_txt.Size = New System.Drawing.Size(183, 29)
+        Me.cliente_middle_name_txt.TabIndex = 1
+        '
+        'client_name_txt
+        '
+        Me.client_name_txt.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.client_name_txt.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.client_name_txt.Location = New System.Drawing.Point(25, 99)
+        Me.client_name_txt.Name = "client_name_txt"
+        Me.client_name_txt.PlaceholderText = "Nombre"
+        Me.client_name_txt.Size = New System.Drawing.Size(183, 29)
+        Me.client_name_txt.TabIndex = 1
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI Light", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.Location = New System.Drawing.Point(0, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(266, 45)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "Datos personales"
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Location = New System.Drawing.Point(512, 78)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.RowTemplate.Height = 25
+        Me.DataGridView2.Size = New System.Drawing.Size(635, 180)
+        Me.DataGridView2.TabIndex = 9
+        '
+        'add_employee_btn
+        '
+        Me.add_employee_btn.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.add_employee_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OldLace
+        Me.add_employee_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Khaki
+        Me.add_employee_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.add_employee_btn.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.add_employee_btn.Location = New System.Drawing.Point(976, 28)
+        Me.add_employee_btn.Name = "add_employee_btn"
+        Me.add_employee_btn.Size = New System.Drawing.Size(168, 36)
+        Me.add_employee_btn.TabIndex = 3
+        Me.add_employee_btn.Text = "Agregar empleado"
+        Me.add_employee_btn.UseVisualStyleBackColor = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Light", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(512, 25)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(176, 45)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "Empleados"
+        '
         'employee_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.ClientSize = New System.Drawing.Size(529, 531)
+        Me.ClientSize = New System.Drawing.Size(1164, 533)
+        Me.Controls.Add(Me.DataGridView2)
+        Me.Controls.Add(Me.add_employee_btn)
+        Me.Controls.Add(Me.personal_employee_info_panel)
         Me.Controls.Add(Me.new_contract_btn)
         Me.Controls.Add(Me.add_consume_btn)
         Me.Controls.Add(Me.Panel1)
@@ -320,8 +535,10 @@ Partial Class employee_form
         Me.Controls.Add(Me.find_client_txt)
         Me.Controls.Add(Me.nuevatarifa)
         Me.Controls.Add(Me.add_client_btn)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.delete_client_btn)
         Me.Controls.Add(Me.close_btn)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "employee_form"
@@ -329,6 +546,9 @@ Partial Class employee_form
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.personal_employee_info_panel.ResumeLayout(False)
+        Me.personal_employee_info_panel.PerformLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -355,5 +575,23 @@ Partial Class employee_form
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents delete_client_btn As Button
     Friend WithEvents edit_client_btn As Button
-    Friend WithEvents nuevatarifa As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents personal_employee_info_panel As Panel
+    Friend WithEvents canel_client_info_btn As Button
+    Friend WithEvents save_employee_btn As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents client_curp_txt As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents password_txt As TextBox
+    Friend WithEvents last_name_txt As TextBox
+    Friend WithEvents Flast_name_txt As TextBox
+    Friend WithEvents username_txt As TextBox
+    Friend WithEvents cliente_middle_name_txt As TextBox
+    Friend WithEvents client_name_txt As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents add_employee_btn As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents canel_employee_info_btn As Button
 End Class

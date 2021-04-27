@@ -66,8 +66,28 @@
         Me.Close()
     End Sub
 
-    Private Sub nuevatarifa_Click(sender As Object, e As EventArgs) Handles nuevatarifa.Click
-        Carga_tarifa.Show()
+    Private Sub client_curp_txt_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged, client_curp_txt.TextChanged
 
     End Sub
+
+    Private Sub add_employee_btn_Click(sender As Object, e As EventArgs) Handles add_employee_btn.Click
+
+        personal_employee_info_panel.Enabled = True
+
+    End Sub
+
+    Private Sub canel_employee_info_btn_Click(sender As Object, e As EventArgs) Handles canel_employee_info_btn.Click
+
+        Dim res As DialogResult = MessageBox.Show("Los cambios y la información no seran guardadas, ¿Estas seguro?", "No se agregara el nuevo empleado", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+
+        If (res = DialogResult.OK) Then
+            personal_employee_info_panel.Enabled = False
+        End If
+
+    End Sub
+
+    Private Sub save_employee_btn_Click(sender As Object, e As EventArgs) Handles save_employee_btn.Click
+        MessageBox.Show("Los cambios se guardaron correctamente", "Empleado agregado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
+    End Sub
+
 End Class
