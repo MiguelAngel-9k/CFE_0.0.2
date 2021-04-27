@@ -103,7 +103,6 @@ Partial Class add_client
         Me.personal_info_panel.Controls.Add(Me.cliente_middle_name_txt)
         Me.personal_info_panel.Controls.Add(Me.client_name_txt)
         Me.personal_info_panel.Controls.Add(Me.Label2)
-        Me.personal_info_panel.Controls.Add(Me.save_changes_btn)
         Me.personal_info_panel.Location = New System.Drawing.Point(12, 89)
         Me.personal_info_panel.Name = "personal_info_panel"
         Me.personal_info_panel.Padding = New System.Windows.Forms.Padding(10)
@@ -301,7 +300,7 @@ Partial Class add_client
         Me.save_changes_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Khaki
         Me.save_changes_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.save_changes_btn.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.save_changes_btn.Location = New System.Drawing.Point(299, 0)
+        Me.save_changes_btn.Location = New System.Drawing.Point(229, 11)
         Me.save_changes_btn.Name = "save_changes_btn"
         Me.save_changes_btn.Size = New System.Drawing.Size(156, 37)
         Me.save_changes_btn.TabIndex = 3
@@ -328,6 +327,7 @@ Partial Class add_client
         Me.contract_panel.Controls.Add(Me.domestic_rbtn)
         Me.contract_panel.Controls.Add(Me.industrial_rbtn)
         Me.contract_panel.Controls.Add(Me.state_cb)
+        Me.contract_panel.Controls.Add(Me.save_changes_btn)
         Me.contract_panel.Controls.Add(Me.Label5)
         Me.contract_panel.Controls.Add(Me.Label9)
         Me.contract_panel.Controls.Add(Me.Label6)
