@@ -2,7 +2,7 @@
 Public Class Form1
     Private Sub login_btn_Click(sender As Object, e As EventArgs) Handles login_btn.Click
         Me.Hide()
-        Carga_tarifa.Show()
+        employee_form.Show()
 
     End Sub
 

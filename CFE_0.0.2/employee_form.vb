@@ -7,9 +7,10 @@
         Form1.Close()
     End Sub
 
-    Private Sub add_client_btn_Click(sender As Object, e As EventArgs) Handles add_client_btn.Click, Button2.Click
+    Private Sub add_client_btn_Click(sender As Object, e As EventArgs) Handles add_client_btn.Click
         Me.Hide()
-        employee_form.Show()
+        add_client.Show()
+
 
     End Sub
 
@@ -63,5 +64,10 @@
     Private Sub add_consume_btn_Click(sender As Object, e As EventArgs) Handles add_consume_btn.Click
         add_consume.Show()
         Me.Close()
+    End Sub
+
+    Private Sub nuevatarifa_Click(sender As Object, e As EventArgs) Handles nuevatarifa.Click
+        Carga_tarifa.Show()
+
     End Sub
 End Class
