@@ -8,8 +8,9 @@
     End Sub
 
     Private Sub add_client_btn_Click(sender As Object, e As EventArgs) Handles add_client_btn.Click, Button2.Click
-        Me.Close()
-        add_client.Show()
+        Me.Hide()
+        employee_form.Show()
+
     End Sub
 
     Private Sub delete_client_btn_Click(sender As Object, e As EventArgs) Handles delete_client_btn.Click
