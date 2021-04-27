@@ -301,11 +301,11 @@ Partial Class add_client
         Me.save_changes_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Khaki
         Me.save_changes_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.save_changes_btn.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.save_changes_btn.Location = New System.Drawing.Point(577, 219)
+        Me.save_changes_btn.Location = New System.Drawing.Point(366, 237)
         Me.save_changes_btn.Name = "save_changes_btn"
-        Me.save_changes_btn.Size = New System.Drawing.Size(100, 37)
+        Me.save_changes_btn.Size = New System.Drawing.Size(156, 37)
         Me.save_changes_btn.TabIndex = 3
-        Me.save_changes_btn.Text = "Guardar"
+        Me.save_changes_btn.Text = "a ver si jala"
         Me.save_changes_btn.UseVisualStyleBackColor = False
         Me.save_changes_btn.Visible = False
         '
