@@ -10,7 +10,7 @@ Public Class Form1
     Private Sub login_btn_Click(sender As Object, e As EventArgs) Handles login_btn.Click
         Me.Hide()
         employee_form.Show()
-
+    
         Dim selected = log_as_cb.SelectedItem.ToString
 
         If selected = "Cliente" Then

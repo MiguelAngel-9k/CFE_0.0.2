@@ -7,9 +7,11 @@
         Form1.Close()
     End Sub
 
-    Private Sub add_client_btn_Click(sender As Object, e As EventArgs) Handles add_client_btn.Click, Button2.Click
-        Me.Close()
+    Private Sub add_client_btn_Click(sender As Object, e As EventArgs) Handles add_client_btn.Click
+        Me.Hide()
         add_client.Show()
+
+
     End Sub
 
     Private Sub delete_client_btn_Click(sender As Object, e As EventArgs) Handles delete_client_btn.Click
@@ -87,4 +89,5 @@
     Private Sub save_employee_btn_Click(sender As Object, e As EventArgs) Handles save_employee_btn.Click
         MessageBox.Show("Los cambios se guardaron correctamente", "Empleado agregado", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
     End Sub
+
 End Class
