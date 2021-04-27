@@ -7,7 +7,7 @@
         Form1.Close()
     End Sub
 
-    Private Sub add_client_btn_Click(sender As Object, e As EventArgs) Handles add_client_btn.Click
+    Private Sub add_client_btn_Click(sender As Object, e As EventArgs) Handles add_client_btn.Click, Button2.Click
         Me.Close()
         add_client.Show()
     End Sub

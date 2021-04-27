@@ -44,6 +44,7 @@ Partial Class employee_form
         Me.add_client_btn = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.delete_client_btn = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -291,6 +292,19 @@ Partial Class employee_form
         Me.delete_client_btn.Text = "Dar de baja"
         Me.delete_client_btn.UseVisualStyleBackColor = False
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Khaki
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.Location = New System.Drawing.Point(130, 12)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(110, 26)
+        Me.Button2.TabIndex = 0
+        Me.Button2.Text = "Nueva tarifa"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'employee_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -304,6 +318,7 @@ Partial Class employee_form
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.find_client_txt)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.add_client_btn)
         Me.Controls.Add(Me.delete_client_btn)
         Me.Controls.Add(Me.close_btn)
@@ -340,4 +355,5 @@ Partial Class employee_form
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents delete_client_btn As Button
     Friend WithEvents edit_client_btn As Button
+    Friend WithEvents Button2 As Button
 End Class
